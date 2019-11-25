@@ -25,7 +25,7 @@ var upload = multer({
 
 //mongoose.connect("mongodb+srv://cyb:cyb@image-uploads-ip8qh.mongodb.net/test?retryWrites=true&w=majority", { useUnifiedTopology: true })
 
-mongoose.connect("mongodb://cyb:cyb@image-uploads-ip8qh.mongodb.net/test?retryWrites=true&w=majority", { useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://cyb:<password>@image-uploads-ip8qh.mongodb.net/test", { useUnifiedTopology: true })
 
 // here data is parsed with body parser module
 app.use(bodyParser.urlencoded({ extended: false }))
